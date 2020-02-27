@@ -1,0 +1,10 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-8 col-12 border-right">
+            <app-tasks-list [tasks]="tasksList" (getSelectedTaskFromList)="selectedTaskData($event)"></app-tasks-list>
+        </div>
+        <div class="col-sm-4 col-12">
+            <app-task-detail [task]="taskSelected"></app-task-detail>
+        </div>
+    </div>
+</div>
